@@ -8,6 +8,7 @@ type OptionCardProps = {
   imageSrc?: string;
   imageAlt?: string;
   selected: boolean;
+  priority?: boolean;
   inputType: "radio" | "checkbox";
   inputName: string;
   value: string;
@@ -21,6 +22,7 @@ export function OptionCard({
   imageSrc,
   imageAlt,
   selected,
+  priority = false,
   inputType,
   inputName,
   value,
@@ -53,6 +55,7 @@ export function OptionCard({
             src={imageSrc}
             alt={imageAlt ?? ""}
             fill
+            priority={priority}
             sizes="(min-width: 1024px) 18vw, (min-width: 640px) 33vw, 100vw"
             className="object-cover transition duration-700 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />

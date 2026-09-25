@@ -22,9 +22,10 @@ export function HairTypeStep({ hairTypeId, onSelect, onNext }: HairTypeStepProps
       <fieldset>
         <legend className="sr-only">Тип волос</legend>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-          {hairTypes.map((type) => (
+          {hairTypes.map((type, index) => (
             <OptionCard
               key={type.id}
+              priority={index < 3}
               name={type.name}
               description={type.description}
               imageSrc={type.image}
