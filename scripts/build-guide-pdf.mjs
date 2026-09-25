@@ -240,7 +240,10 @@ const html = `<!doctype html>
     .product-group li { display: grid; grid-template-columns: 22mm 1fr; gap: 3mm; margin: 0 0 3mm; }
     .product-group img { height: 22mm; }
     .meta { margin-top: 1mm; font-size: 9pt; color: #6b5c50; }
-    .tip { border-left: 2px solid #c4a484; padding: 0 0 3mm 4mm; margin: 0 0 3.5mm; }
+    .tip { border-left: 2px solid #c4a484; padding: 0 0 1.4mm 4mm; margin: 0 0 2.2mm; }
+    .tips .intro { margin-bottom: 5mm; }
+    .tips h3 { font-size: 13.5pt; line-height: 1.1; }
+    .tips p { line-height: 1.35; }
     .slots { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
     .slots li { border: 1px solid #e4dbd1; padding: 3mm; margin: 0; }
     .slots span { display: block; color: #5c5148; margin-top: 1mm; }
@@ -308,7 +311,7 @@ const html = `<!doctype html>
     ${productsByCategory}
   </section>
 
-  <section class="section">
+  <section class="section tips">
     <p class="eyebrow">Pro</p>
     <h2>Расширенные рекомендации</h2>
     <p class="intro">Советы, которые в приложении показываются, когда совпадают тип волос и потребности.</p>
